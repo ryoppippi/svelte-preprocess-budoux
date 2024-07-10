@@ -73,4 +73,4 @@ const budouxPreprocess: PreprocessorGroup = {
   },
 };
 
-export default budouxPreprocess;
+export { budouxPreprocess };
