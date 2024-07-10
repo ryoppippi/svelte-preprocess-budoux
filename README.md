@@ -1,3 +1,3 @@
-# Deno jsr library template
+# svelte-preprocess-budoux
 
 

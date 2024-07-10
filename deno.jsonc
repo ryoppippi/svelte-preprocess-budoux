@@ -1,5 +1,5 @@
 {
-  "name": "@ryoppippi/",
+  "name": "@ryoppippi/svelte-preprocess-budoux",
   "version": "0.0.0",
   "tasks": {
     "dev": "deno run --watch mod.ts",
@@ -16,8 +16,15 @@
     ]
   },
   "imports": {
+    "@babel/types": "npm:@babel/types@^7.24.7",
     "@cross/test": "jsr:@cross/test@^0.0.9",
-    "@std/assert": "jsr:@std/assert@^0.226.0"
+    "@std/assert": "jsr:@std/assert@^0.226.0",
+    "@sxzz/magic-string-ast": "jsr:@sxzz/magic-string-ast@^0.6.2",
+    "astring": "npm:astring@^1.8.6",
+    "budoux": "npm:budoux@^0.6.2",
+    "estree-walker": "npm:estree-walker@^3.0.3",
+    "svelte": "npm:svelte@^4.2.18",
+    "svelte-parse-markup": "npm:svelte-parse-markup@^0.1.5"
   },
   "exports": "./mod.ts",
   "publish": {
