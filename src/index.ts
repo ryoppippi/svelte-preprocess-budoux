@@ -75,10 +75,6 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
         },
       });
 
-      console.log({
-        result: s.toString(),
-      });
-
       return {
         code: s.toString(),
         map: s.generateMap(),
