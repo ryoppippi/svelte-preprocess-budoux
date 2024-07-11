@@ -17,9 +17,6 @@ importers:
       estree-walker:
         specifier: ^3.0.3
         version: 3.0.3
-      html-dom-parser:
-        specifier: ^5.0.8
-        version: 5.0.8
       magic-string-ast:
         specifier: ^0.6.2
         version: 0.6.2
@@ -52,7 +49,37 @@ importers:
         specifier: ^5.5.3
         version: 5.5.3
 
-  examples/sveltekit:
+  examples/hooks-sveltekit:
+    devDependencies:
+      '@sveltejs/adapter-auto':
+        specifier: ^3.2.2
+        version: 3.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.181)(vite@5.3.3))(svelte@5.0.0-next.181)(vite@5.3.3))
+      '@sveltejs/kit':
+        specifier: ^2.5.18
+        version: 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.181)(vite@5.3.3))(svelte@5.0.0-next.181)(vite@5.3.3)
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^3.0.0
+        version: 3.1.1(svelte@5.0.0-next.181)(vite@5.3.3)
+      svelte:
+        specifier: ^5.0.0-next.181
+        version: 5.0.0-next.181
+      svelte-check:
+        specifier: ^3.6.0
+        version: 3.8.4(postcss@8.4.39)(svelte@5.0.0-next.181)
+      svelte-preprocess-budoux:
+        specifier: workspace:*
+        version: link:../..
+      tslib:
+        specifier: ^2.4.1
+        version: 2.6.3
+      typescript:
+        specifier: ^5.0.0
+        version: 5.5.3
+      vite:
+        specifier: ^5.0.3
+        version: 5.3.3
+
+  examples/preproccessor-sveltekit:
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.2.2
@@ -780,15 +807,9 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
-  html-dom-parser@5.0.8:
-    resolution: {integrity: sha512-vuWiX9EXgu8CJ5m9EP5c7bvBmNSuQVnrY8tl0z0ZX96Uth1IPlYH/8W8VZ/hBajFf18EN+j2pukbCNd01HEd1w==}
-
   html-encoding-sniffer@4.0.0:
     resolution: {integrity: sha512-Y22oTqIU4uuPgEemfz7NDJz6OeKf12Lsu+QC+s3BVpda64lTiMYCyGwg5ki4vFxkMwQdeZDl2adZoqUgdFuTgQ==}
     engines: {node: '>=18'}
-
-  htmlparser2@9.1.0:
-    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
 
   http-proxy-agent@7.0.2:
     resolution: {integrity: sha512-T1gkAiYYDWYx3V5Bmyu7HcfcvL7mUrTWiM6yOfa3PIphViJ/gFPbvidQ+veqSOHci/PxBcDabeUNCzpOODJZig==}
@@ -2348,21 +2369,9 @@ snapshots:
 
   he@1.2.0: {}
 
-  html-dom-parser@5.0.8:
-    dependencies:
-      domhandler: 5.0.3
-      htmlparser2: 9.1.0
-
   html-encoding-sniffer@4.0.0:
     dependencies:
       whatwg-encoding: 3.1.1
-
-  htmlparser2@9.1.0:
-    dependencies:
-      domelementtype: 2.3.0
-      domhandler: 5.0.3
-      domutils: 3.1.0
-      entities: 4.5.0
 
   http-proxy-agent@7.0.2:
     dependencies:
