@@ -23,7 +23,7 @@
   "scripts": {
     "build": "mkdist -d",
     "typecheck": "tsc --noEmit",
-    "release": "npm run typecheck && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run typecheck && npm run build && changelogen --release && npm publish && git push --follow-tags",
     "fmt": "deno fmt"
   },
   "devDependencies": {
