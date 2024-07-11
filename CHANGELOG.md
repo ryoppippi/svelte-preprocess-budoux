@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/ryoppippi/svelte-preprocess-budoux/compare/v0.2.4...v0.3.0)
+
+### 🚀 Enhancements
+
+- Add sveltekit hooks configuration ([95ff51a](https://github.com/ryoppippi/svelte-preprocess-budoux/commit/95ff51a))
+- **tsconfig.json:** Add skipLibCheck option ([630641c](https://github.com/ryoppippi/svelte-preprocess-budoux/commit/630641c))
+
+### 💅 Refactors
+
+- Rename 'sveltekit' to 'preproccessor-sveltekit' ([134d681](https://github.com/ryoppippi/svelte-preprocess-budoux/commit/134d681))
+
+### ❤️ Contributors
+
+- Ryoppippi ([@ryoppippi](http://github.com/ryoppippi))
+
 ## v0.2.4
 
 [compare changes](https://github.com/ryoppippi/svelte-preprocess-budoux/compare/v0.2.3...v0.2.4)
