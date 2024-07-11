@@ -1,6 +1,6 @@
 {
   "name": "svelte-preprocess-budoux",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "svelte-preprocess plugin for Budoux",
   "type": "module",
   "exports": {
@@ -19,6 +19,10 @@
   },
   "author": "ryoppippi",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryoppippi/svelte-preprocess-budoux.git"
+  },
   "devDependencies": {
     "@babel/types": "^7.24.7",
     "@types/estree": "^1.0.5",
