@@ -1,21 +1,11 @@
 import type { PreprocessorGroup } from "svelte/compiler";
 import type { Node as BabelNode } from "@babel/types";
+import type { Node } from "./types";
 
 import { walk } from "estree-walker";
 import { parse } from "svelte-parse-markup";
 import { loadDefaultJapaneseParser } from "budoux";
-import { MagicStringAST } from "@sxzz/magic-string-ast";
-
-interface Node {
-  name: string;
-  start: number;
-  end: number;
-  type: "Element" | "Text" | "MustacheTag" | "RawMustacheTag";
-  attributes: Array<{ name: string; type: string }>;
-  children?: Array<Node>;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data?: unknown;
-}
+import { MagicStringAST } from "magic-string-ast";
 
 const DATA_ATTR = `data-budoux`;
 
