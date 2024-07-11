@@ -70,7 +70,7 @@ importers:
         specifier: workspace:*
         version: link:../..
       tslib:
-        specifier: ^2.4.1
+        specifier: ^2.6.3
         version: 2.6.3
       typescript:
         specifier: ^5.0.0
@@ -100,7 +100,7 @@ importers:
         specifier: workspace:*
         version: link:../..
       tslib:
-        specifier: ^2.4.1
+        specifier: ^2.6.3
         version: 2.6.3
       typescript:
         specifier: ^5.0.0
