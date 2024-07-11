@@ -8,6 +8,7 @@
     "resolveJsonModule": true,
     "inlineSourceMap": true,
     "declaration": true,
+    "skipLibCheck": true,
     "outDir": "dist"
   },
   "include": ["src"]
