@@ -19,3 +19,8 @@ export interface Options {
   language?: "ja" | "cs" | "ct" | "th";
   attribute?: string;
 }
+
+export const DEFAULT_OPTIONS = {
+  language: "ja",
+  attribute: `data-budoux`,
+} as const satisfies Options;
