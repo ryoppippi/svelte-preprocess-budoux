@@ -1,66 +1,90 @@
 import type { PreprocessorGroup } from "svelte/compiler";
 import type { Node as BabelNode } from "@babel/types";
-import type { Node } from "./types";
+import type { Node, Options } from "./types";
+import { defu } from "defu";
 
 import { walk } from "estree-walker";
 import { parse } from "svelte-parse-markup";
-import { loadDefaultJapaneseParser } from "budoux";
+import * as budoux from "budoux";
 import { MagicStringAST } from "magic-string-ast";
 
-const DATA_ATTR = `data-budoux`;
+const DEFAULT_OPTIONS = {
+  language: "ja",
+  attribute: `data-budoux`,
+} as const satisfies Options;
 
-const parser = loadDefaultJapaneseParser();
+function getParser(language: Exclude<Options["language"], null | undefined>) {
+  switch (language) {
+    case "ja":
+      return budoux.loadDefaultJapaneseParser();
+    case "cs":
+      return budoux.loadDefaultSimplifiedChineseParser();
+    case "ct":
+      return budoux.loadDefaultTraditionalChineseParser();
+    case "th":
+      return budoux.loadDefaultThaiParser();
+    default:
+      language satisfies never;
+      throw new Error(`Language ${language} is not supported`);
+  }
+}
 
-const budouxPreprocess: PreprocessorGroup = {
-  markup(o) {
-    const { content, filename } = o;
+function budouxPreprocess(options: Options = {}): PreprocessorGroup {
+  const { language, attribute } = defu(options, DEFAULT_OPTIONS);
 
-    if (!content.includes(DATA_ATTR)) {
-      return;
-    }
+  const parser = getParser(language);
 
-    const s = new MagicStringAST(content);
-    const ast = parse(content, { filename });
+  return {
+    markup(o) {
+      const { content, filename } = o;
 
-    // deno-lint-ignore no-explicit-any
-    walk(ast.html as any, {
-      enter(_node: unknown) {
-        const node = _node as unknown as Node;
+      if (!content.includes(attribute)) {
+        return;
+      }
 
-        /* if the node is not an element, we don't care about it */
-        if (node.type !== "Element") {
-          return;
-        }
-        const dataAttr = node.attributes.find((attr) =>
-          attr.name === DATA_ATTR
-        );
+      const s = new MagicStringAST(content);
+      const ast = parse(content, { filename });
 
-        /* if the node does not have the data-budoux attribute, we don't care about it */
-        if (dataAttr == null) {
-          return;
-        }
+      // deno-lint-ignore no-explicit-any
+      walk(ast.html as any, {
+        enter(_node: unknown) {
+          const node = _node as unknown as Node;
 
-        const __node = node as unknown as BabelNode;
-        /* get all text of children with tags */
-        const childrenText = s.sliceNode(__node);
+          /* if the node is not an element, we don't care about it */
+          if (node.type !== "Element") {
+            return;
+          }
+          const dataAttr = node.attributes.find((attr) =>
+            attr.name === attribute
+          );
 
-        /* parse the text with budoux */
-        const parsed = parser.translateHTMLString(childrenText);
+          /* if the node does not have the data-budoux attribute, we don't care about it */
+          if (dataAttr == null) {
+            return;
+          }
 
-        /* replace the children text with the parsed text */
-        s.overwriteNode(__node, parsed);
-      },
-    });
+          const __node = node as unknown as BabelNode;
+          /* get all text of children with tags */
+          const childrenText = s.sliceNode(__node);
 
-    console.log({
-      result: s.toString(),
-    });
+          /* parse the text with budoux */
+          const parsed = parser.translateHTMLString(childrenText);
 
-    return {
-      code: s.toString(),
-      map: s.generateMap(),
-    };
-  },
-};
+          /* replace the children text with the parsed text */
+          s.overwriteNode(__node, parsed);
+        },
+      });
+
+      console.log({
+        result: s.toString(),
+      });
+
+      return {
+        code: s.toString(),
+        map: s.generateMap(),
+      };
+    },
+  };
+}
 
 export { budouxPreprocess };

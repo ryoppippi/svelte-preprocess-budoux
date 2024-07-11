@@ -9,3 +9,13 @@ export interface Node extends BaseNode {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: unknown;
 }
+
+/**
+ * Options for the budoux preprocessor
+ * @param language - The language to translate to (default: `ja`)
+ * @param attribute - The attribute to look for to translate (default: `data-budoux`)
+ */
+export interface Options {
+  language?: "ja" | "cs" | "ct" | "th";
+  attribute?: string;
+}
