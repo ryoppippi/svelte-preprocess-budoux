@@ -32,13 +32,13 @@
     "changelogen": "^0.5.5",
     "defu": "^6.1.4",
     "mkdist": "^1.5.3",
-    "svelte": "^5.0.0-next.181",
-    "svelte-parse-markup": "^0.1.5",
     "typescript": "^5.5.3"
   },
   "dependencies": {
     "budoux": "^0.6.2",
     "estree-walker": "^3.0.3",
-    "magic-string-ast": "^0.6.2"
+    "magic-string-ast": "^0.6.2",
+    "svelte": "^5.0.0-next.181",
+    "svelte-parse-markup": "^0.1.5"
   }
 }
