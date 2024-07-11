@@ -1,4 +1,19 @@
 # svelte-preprocess-budoux
 
+## Configuration
 
-https://jsr.io/@ryoppippi/svelte-preprocess-budoux
+`svelte.config.js`
+
+```js
+import { budouxPreprocess } from "svelte-preprocess-budoux";
+
+const config = {
+  preprocess: [
+    vitePreprocess(),
+    budouxPreprocess({ language: "ja" }),
+  ],
+  // ... other svelte options
+};
+
+export default config;
+```
