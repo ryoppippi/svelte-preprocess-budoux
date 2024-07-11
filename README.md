@@ -5,6 +5,9 @@
 
 ## Configuration
 
+You can choose svelte prerocessor or sveltekit hooks
+
+### Preprocessor 
 `svelte.config.js`
 
 ```js
@@ -19,4 +22,14 @@ const config = {
 };
 
 export default config;
+```
+
+### Sveltekit hooks
+
+`hooks.server.js`
+
+```js
+import { budouxHandle } from "svelte-preprocess-budoux";
+
+export const handle = budouxHandle({ language: "ja" });
 ```
