@@ -31,7 +31,7 @@
     "@sveltejs/kit": "^2.5.18",
     "@types/estree": "^1.0.5",
     "changelogen": "^0.5.5",
-    "mkdist": "^1.5.3",
+    "mkdist": "^1.5.4",
     "node-html-parser": "^6.1.13",
     "typescript": "^5.5.3"
   },
