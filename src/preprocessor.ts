@@ -5,12 +5,10 @@ import type { Node, Options } from "./types";
 import { walk } from "estree-walker";
 import { parse } from "svelte-parse-markup";
 import { MagicStringAST } from "magic-string-ast";
-import { getParser, resolveOptions } from "./utils";
+import { getParser, Language, resolveOptions } from "./utils";
 
 function budouxPreprocess(options: Options = {}): PreprocessorGroup {
   const { language, attribute } = resolveOptions(options);
-
-  const parser = getParser(language);
 
   return {
     markup(o) {
@@ -40,6 +38,10 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
           if (dataAttr == null) {
             return;
           }
+
+          const { value } = dataAttr as unknown as { value: boolean | ({ data: string }[]) };
+
+          const parser = getParser(typeof value === "boolean" ? language : value[0].data as Language);
 
           const __node = node as unknown as BabelNode;
           /* get all text of children with tags */
