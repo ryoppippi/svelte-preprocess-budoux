@@ -12,7 +12,7 @@ export interface Node extends BaseNode {
 
 /**
  * Options for the budoux preprocessor
- * @param language - The language to translate to (default: `ja`)
+ * @param language - The default language to translate to (default: `ja`)
  * @param attribute - The attribute to look for to translate (default: `data-budoux`)
  */
 export interface Options {
