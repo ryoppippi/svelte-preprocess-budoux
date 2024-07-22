@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.4.0
+
+[compare changes](https://github.com/ryoppippi/svelte-preprocess-budoux/compare/v0.3.0...v0.4.0)
+
+### 🚀 Enhancements
+
+- Update release script in package.json ([597c90c](https://github.com/ryoppippi/svelte-preprocess-budoux/commit/597c90c))
+
+### ❤️ Contributors
+
+- Ryoppippi ([@ryoppippi](http://github.com/ryoppippi))
+
 ## v0.3.0
 
 [compare changes](https://github.com/ryoppippi/svelte-preprocess-budoux/compare/v0.2.4...v0.3.0)

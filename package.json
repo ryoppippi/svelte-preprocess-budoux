@@ -1,6 +1,6 @@
 {
   "name": "svelte-preprocess-budoux",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "svelte-preprocess plugin for Budoux",
   "author": "ryoppippi",
   "repository": "ryoppippi/svelte-preprocess-budoux",
