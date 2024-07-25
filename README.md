@@ -24,7 +24,7 @@ const config = {
 export default config;
 ```
 
-### Sveltekit hooks
+### SvelteKit hooks
 
 `hooks.server.js`
 
