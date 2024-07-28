@@ -14,8 +14,8 @@ export function budouxHandle(options: Options = {}): Handle {
         const parsedHTML = parse(html);
         const elements = parsedHTML.querySelectorAll(`[${attribute}]`);
         for (const element of elements) {
-          const attr = element.attributes[attribute]
-          const parser = getParser(attr === '' ? language : attr as Language);
+          const attr = element.attributes[attribute];
+          const parser = getParser(attr === "" ? language : attr as Language);
 
           const { range, innerHTML } = element;
           const [start, end] = range;
