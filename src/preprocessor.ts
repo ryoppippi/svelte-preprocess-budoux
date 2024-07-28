@@ -39,9 +39,13 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
             return;
           }
 
-          const { value } = dataAttr as unknown as { value: boolean | ({ data: string }[]) };
+          const { value } = dataAttr as unknown as {
+            value: boolean | ({ data: string }[]);
+          };
 
-          const parser = getParser(typeof value === "boolean" ? language : value[0].data as Language);
+          const parser = getParser(
+            typeof value === "boolean" ? language : value[0].data as Language,
+          );
 
           const __node = node as unknown as BabelNode;
           /* get all text of children with tags */

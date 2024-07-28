@@ -3,7 +3,7 @@ import * as budoux from "budoux";
 import { DEFAULT_OPTIONS, Options } from "./types";
 
 export type HTMLProcessingParser = budoux.HTMLProcessingParser;
-export type Language= Exclude<Options["language"], null | undefined>;
+export type Language = Exclude<Options["language"], null | undefined>;
 
 export function resolveOptions(options: Options) {
   return defu(options, DEFAULT_OPTIONS);
@@ -17,13 +17,13 @@ export function getParser(
 ): HTMLProcessingParser {
   switch (language) {
     case "ja":
-      return parserCache['ja'] ??= budoux.loadDefaultJapaneseParser();
+      return parserCache["ja"] ??= budoux.loadDefaultJapaneseParser();
     case "cs":
-      return parserCache['cs'] ??= budoux.loadDefaultSimplifiedChineseParser();
+      return parserCache["cs"] ??= budoux.loadDefaultSimplifiedChineseParser();
     case "ct":
-      return parserCache['ct'] ??= budoux.loadDefaultTraditionalChineseParser();
+      return parserCache["ct"] ??= budoux.loadDefaultTraditionalChineseParser();
     case "th":
-      return parserCache['th'] ??= budoux.loadDefaultThaiParser();
+      return parserCache["th"] ??= budoux.loadDefaultThaiParser();
     default:
       language satisfies never;
       throw new Error(`Language ${language} is not supported`);
