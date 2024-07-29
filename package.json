@@ -27,7 +27,7 @@
     "fmt": "deno fmt"
   },
   "devDependencies": {
-    "@babel/types": "^7.24.9",
+    "@babel/types": "^7.25.0",
     "@sveltejs/kit": "^2.5.18",
     "@types/estree": "^1.0.5",
     "changelogen": "^0.5.5",
