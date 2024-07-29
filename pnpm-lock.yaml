@@ -28,7 +28,7 @@ importers:
         version: 0.1.5(svelte@5.0.0-next.201)
     devDependencies:
       '@babel/types':
-        specifier: ^7.24.9
+        specifier: ^7.25.0
         version: 7.25.0
       '@sveltejs/kit':
         specifier: ^2.5.18
