@@ -1,5 +1,8 @@
 # svelte-preprocess-budoux
 
+[![npm version](https://img.shields.io/npm/v/svelte-preprocess-budoux?color=yellow)](https://npmjs.com/package/svelte-preprocess-budoux)
+[![npm downloads](https://img.shields.io/npm/dm/svelte-preprocess-budoux?color=yellow)](https://npmjs.com/package/svelte-preprocess-budoux)
+
 ![Screenshot 2024-07-11 at 11 39 44](https://github.com/ryoppippi/svelte-preprocess-budoux/assets/1560508/03fd68d9-58fc-445b-8186-a42f22114ae2)
 
 ## Configuration
