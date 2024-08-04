@@ -26,22 +26,36 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 
 			walk(ast.html as TemplateNode, state, {
 				Element(node, { state }) {
-					const dataAttr = node?.attributes?.find(attr =>
-						attr.type === 'Attribute' && attr.name === attribute,
-					);
+					const dataAttr = node?.attributes
+						?.filter(attr => attr.type === 'Attribute')
+						.find(attr => attr.name === attribute);
 
 					/* if the node does not have the data-budoux attribute, we don't care about it */
 					if (dataAttr == null) {
 						return;
 					}
 
-					const { value } = dataAttr as unknown as {
-						value: boolean | ({ data: string }[]);
-					};
+					const parserLanguage: Language = (() => {
+						const { value } = dataAttr;
 
-					const parser = getParser(
-						typeof value === 'boolean' ? language : value[0].data as Language,
-					);
+						if (value === true) {
+							return language;
+						}
+
+						const first = value.at(0);
+
+						if (first == null) {
+							throw new Error('Invalid language');
+						}
+
+						if (first.type === 'Text') {
+							return first.data as Language;
+						}
+
+						throw new Error('Invalid language');
+					})();
+
+					const parser = getParser(parserLanguage);
 
 					const { start, end } = node;
 
