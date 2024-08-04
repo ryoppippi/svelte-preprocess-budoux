@@ -31,7 +31,8 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 					if (node.type !== 'Element') {
 						return;
 					}
-					const dataAttr = node.attributes.find(attr =>
+
+					const dataAttr = node?.attributes?.find(attr =>
 						attr.name === attribute,
 					);
 
