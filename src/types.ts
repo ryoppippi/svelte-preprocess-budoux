@@ -1,14 +1,3 @@
-import type { BaseNode } from 'estree';
-
-export type Node = {
-	name: string;
-	start: number;
-	end: number;
-	attributes: Array<{ name: string; type: string }>;
-	children?: Array<Node>;
-	data?: unknown;
-} & BaseNode;
-
 /**
  * Options for the budoux preprocessor
  * @param language - The default language to translate to (default: `ja`)

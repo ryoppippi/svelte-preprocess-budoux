@@ -1,10 +1,10 @@
 import type { PreprocessorGroup } from 'svelte/compiler';
-import type { Node as BabelNode } from '@babel/types';
+import type { TemplateNode } from 'svelte-eslint-parser/lib/parser/svelte-ast-types';
 
 import { walk } from 'zimmerframe';
 import { parse } from 'svelte-parse-markup';
-import { MagicStringAST } from 'magic-string-ast';
-import type { Node, Options } from './types';
+import MagicString from 'magic-string';
+import type { Options } from './types';
 import type { Language } from './utils';
 import { getParser, resolveOptions } from './utils';
 
@@ -19,15 +19,15 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 				return;
 			}
 
-			const s = new MagicStringAST(content);
+			const s = new MagicString(content);
 			const ast = parse(content, { filename });
 
-			const state = [] as { node: BabelNode; parsed: string }[];
+			const state = [] as { start: number; end: number; parsed: string }[];
 
-			walk(ast.html as Node, state, {
+			walk(ast.html as TemplateNode, state, {
 				Element(node, { state }) {
 					const dataAttr = node?.attributes?.find(attr =>
-						attr.name === attribute,
+						attr.type === 'Attribute' && attr.name === attribute,
 					);
 
 					/* if the node does not have the data-budoux attribute, we don't care about it */
@@ -43,20 +43,21 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 						typeof value === 'boolean' ? language : value[0].data as Language,
 					);
 
-					const __node = node as unknown as BabelNode;
+					const { start, end } = node;
+
 					/* get all text of children with tags */
-					const childrenText = s.sliceNode(__node);
+					const childrenText = s.slice(start, end);
 
 					/* parse the text with budoux */
 					const parsed = parser.translateHTMLString(childrenText);
 
-					state.push({ node: __node, parsed });
+					state.push({ start, end, parsed });
 				},
 			});
 
 			/* replace the children text with the parsed text */
-			state.forEach(({ node, parsed }) => {
-				s.overwriteNode(node, parsed);
+			state.forEach(({ start, end, parsed }) => {
+				s.overwrite(start, end, parsed);
 			});
 
 			if (s.hasChanged()) {
