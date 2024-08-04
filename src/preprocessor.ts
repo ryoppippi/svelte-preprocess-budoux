@@ -1,7 +1,7 @@
 import type { PreprocessorGroup } from 'svelte/compiler';
 import type { Node as BabelNode } from '@babel/types';
 
-import { walk } from 'estree-walker';
+import { walk } from 'zimmerframe';
 import { parse } from 'svelte-parse-markup';
 import { MagicStringAST } from 'magic-string-ast';
 import type { Node, Options } from './types';
@@ -22,16 +22,10 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 			const s = new MagicStringAST(content);
 			const ast = parse(content, { filename });
 
-			// eslint-disable-next-line ts/no-unsafe-argument
-			walk(ast.html as any, {
-				enter(_node: unknown) {
-					const node = _node as Node;
+			const state = [] as { node: BabelNode; parsed: string }[];
 
-					/* if the node is not an element, we don't care about it */
-					if (node.type !== 'Element') {
-						return;
-					}
-
+			walk(ast.html as Node, state, {
+				Element(node, { state }) {
 					const dataAttr = node?.attributes?.find(attr =>
 						attr.name === attribute,
 					);
@@ -56,15 +50,23 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 					/* parse the text with budoux */
 					const parsed = parser.translateHTMLString(childrenText);
 
-					/* replace the children text with the parsed text */
-					s.overwriteNode(__node, parsed);
+					state.push({ node: __node, parsed });
 				},
 			});
 
-			return {
-				code: s.toString(),
-				map: s.generateMap(),
-			};
+			/* replace the children text with the parsed text */
+			state.forEach(({ node, parsed }) => {
+				s.overwriteNode(node, parsed);
+			});
+
+			if (s.hasChanged()) {
+				return {
+					code: s.toString(),
+					map: s.generateMap(),
+				};
+			}
+
+			return { code: content };
 		},
 	};
 }
