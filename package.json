@@ -43,7 +43,7 @@
 		"@sveltejs/kit": "^2.5.19",
 		"@types/estree": "^1.0.5",
 		"@types/node": "^22.1.0",
-		"bumpp": "^9.4.1",
+		"bumpp": "^9.4.2",
 		"eslint": "^9.8.0",
 		"eslint-plugin-svelte": "^2.43.0",
 		"mkdist": "^1.5.4",
