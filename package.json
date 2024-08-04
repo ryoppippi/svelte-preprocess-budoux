@@ -26,7 +26,8 @@
 		"typecheck": "tsc --noEmit",
 		"release": "nr typecheck && nr build && bumpp && npm publish",
 		"lint": "eslint --cache .",
-		"format": "nr lint --fix"
+		"format": "nr lint --fix",
+		"test": "vitest"
 	},
 	"dependencies": {
 		"budoux": "^0.6.2",
@@ -42,11 +43,13 @@
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@sveltejs/kit": "^2.5.19",
 		"@types/estree": "^1.0.5",
+		"@types/node": "^22.1.0",
 		"bumpp": "^9.4.1",
 		"eslint": "^9.8.0",
 		"eslint-plugin-svelte": "^2.43.0",
 		"mkdist": "^1.5.4",
 		"node-html-parser": "^6.1.13",
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.5"
 	}
 }
