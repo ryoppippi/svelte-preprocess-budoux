@@ -1,3 +1,3 @@
-import { budouxHandle } from "svelte-preprocess-budoux";
+import { budouxHandle } from 'svelte-preprocess-budoux';
 
-export const handle = budouxHandle({ language: "ja" });
+export const handle = budouxHandle({ language: 'ja' });

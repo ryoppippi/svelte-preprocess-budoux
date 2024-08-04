@@ -1,49 +1,52 @@
 {
-  "name": "svelte-preprocess-budoux",
-  "version": "0.4.1",
-  "description": "svelte-preprocess plugin for Budoux",
-  "author": "ryoppippi",
-  "repository": "ryoppippi/svelte-preprocess-budoux",
-  "license": "MIT",
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "bun": "./src/index.ts",
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "files": [
-    "src",
-    "dist"
-  ],
-  "scripts": {
-    "build": "mkdist -d",
-    "typecheck": "tsc --noEmit",
-    "release": "nr typecheck && nr build && bumpp && npm publish",
-    "fmt": "deno fmt"
-  },
-  "devDependencies": {
-    "@antfu/ni": "^0.22.0",
-    "@babel/types": "^7.25.2",
-    "@sveltejs/kit": "^2.5.19",
-    "@types/estree": "^1.0.5",
-    "bumpp": "^9.4.1",
-    "changelogen": "^0.5.5",
-    "mkdist": "^1.5.4",
-    "node-html-parser": "^6.1.13",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "budoux": "^0.6.2",
-    "defu": "^6.1.4",
-    "estree-walker": "^3.0.3",
-    "magic-string-ast": "^0.6.2",
-    "svelte": "^5.0.0-next.205",
-    "svelte-parse-markup": "^0.1.5"
-  },
-  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+	"name": "svelte-preprocess-budoux",
+	"type": "module",
+	"version": "0.4.1",
+	"packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e",
+	"description": "svelte-preprocess plugin for Budoux",
+	"author": "ryoppippi",
+	"license": "MIT",
+	"repository": "ryoppippi/svelte-preprocess-budoux",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"bun": "./src/index.ts",
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"src"
+	],
+	"scripts": {
+		"build": "mkdist -d",
+		"typecheck": "tsc --noEmit",
+		"release": "nr typecheck && nr build && bumpp && npm publish",
+		"lint": "eslint --cache .",
+		"format": "nr lint --fix"
+	},
+	"dependencies": {
+		"budoux": "^0.6.2",
+		"defu": "^6.1.4",
+		"estree-walker": "^3.0.3",
+		"magic-string-ast": "^0.6.2",
+		"svelte": "^5.0.0-next.205",
+		"svelte-parse-markup": "^0.1.5"
+	},
+	"devDependencies": {
+		"@antfu/ni": "^0.22.0",
+		"@babel/types": "^7.25.2",
+		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
+		"@sveltejs/kit": "^2.5.19",
+		"@types/estree": "^1.0.5",
+		"bumpp": "^9.4.1",
+		"eslint": "^9.8.0",
+		"eslint-plugin-svelte": "^2.43.0",
+		"mkdist": "^1.5.4",
+		"node-html-parser": "^6.1.13",
+		"typescript": "^5.5.4"
+	}
 }

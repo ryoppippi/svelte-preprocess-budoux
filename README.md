@@ -14,14 +14,14 @@ You can choose svelte prerocessor or sveltekit hooks
 `svelte.config.js`
 
 ```js
-import { budouxPreprocess } from "svelte-preprocess-budoux";
+import { budouxPreprocess } from 'svelte-preprocess-budoux';
 
 const config = {
-  preprocess: [
-    vitePreprocess(),
-    budouxPreprocess({ language: "ja" }),
-  ],
-  // ... other svelte options
+	preprocess: [
+		vitePreprocess(),
+		budouxPreprocess({ language: 'ja' }),
+	],
+	// ... other svelte options
 };
 
 export default config;
@@ -32,7 +32,7 @@ export default config;
 `hooks.server.js`
 
 ```js
-import { budouxHandle } from "svelte-preprocess-budoux";
+import { budouxHandle } from 'svelte-preprocess-budoux';
 
-export const handle = budouxHandle({ language: "ja" });
+export const handle = budouxHandle({ language: 'ja' });
 ```
