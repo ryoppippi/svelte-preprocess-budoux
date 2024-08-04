@@ -1,6 +1,6 @@
 import type { Handle } from '@sveltejs/kit';
 import { parse } from 'node-html-parser';
-import { MagicStringAST } from 'magic-string-ast';
+import MagicString from 'magic-string';
 import type { Options } from './types';
 import type { Language } from './utils';
 import { getParser, resolveOptions } from './utils';
@@ -12,7 +12,7 @@ export function budouxHandle(options: Options = {}): Handle {
 	return async ({ event, resolve }) => {
 		return resolve(event, {
 			transformPageChunk: async ({ html }) => {
-				const s = new MagicStringAST(html);
+				const s = new MagicString(html);
 				const parsedHTML = parse(html);
 				const elements = parsedHTML.querySelectorAll(`[${attribute}]`);
 				for (const element of elements) {
