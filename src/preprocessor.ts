@@ -29,7 +29,7 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 
 					/* if the node is not an element, we don't care about it */
 					if (node.type !== 'Element') {
-						this.skip();
+						return;
 					}
 					const dataAttr = node.attributes.find(attr =>
 						attr.name === attribute,
@@ -37,7 +37,7 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 
 					/* if the node does not have the data-budoux attribute, we don't care about it */
 					if (dataAttr == null) {
-						this.skip();
+						return;
 					}
 
 					const { value } = dataAttr as unknown as {
