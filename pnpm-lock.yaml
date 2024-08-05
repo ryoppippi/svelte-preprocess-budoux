@@ -18,7 +18,7 @@ importers:
         specifier: ^0.30.11
         version: 0.30.11
       svelte:
-        specifier: ^5.0.0-next.205
+        specifier: ^5.0.0-next.206
         version: 5.0.0-next.207
       svelte-parse-markup:
         specifier: ^0.1.5
@@ -79,7 +79,7 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(svelte@5.0.0-next.207)(vite@5.3.5(@types/node@22.1.0))
       svelte:
-        specifier: ^5.0.0-next.205
+        specifier: ^5.0.0-next.206
         version: 5.0.0-next.207
       svelte-check:
         specifier: ^3.8.5
@@ -109,7 +109,7 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(svelte@5.0.0-next.207)(vite@5.3.5(@types/node@22.1.0))
       svelte:
-        specifier: ^5.0.0-next.205
+        specifier: ^5.0.0-next.206
         version: 5.0.0-next.207
       svelte-check:
         specifier: ^3.8.5
@@ -3624,7 +3624,7 @@ snapshots:
       '@vue/compiler-ssr': 3.4.35
       '@vue/shared': 3.4.35
       estree-walker: 2.0.2
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       postcss: 8.4.40
       source-map-js: 1.2.0
 
@@ -5425,7 +5425,7 @@ snapshots:
     dependencies:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       sorcery: 0.11.1
       strip-indent: 3.0.0
       svelte: 5.0.0-next.207
