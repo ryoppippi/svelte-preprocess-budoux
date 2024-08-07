@@ -6,5 +6,8 @@ export default ryoppippi({
 	ignores: ['examples/**'],
 	typescript: {
 		tsconfigPath: './tsconfig.json',
+		overrides: {
+			'import/no-extraneous-dependencies': ['error'],
+		},
 	},
 });
