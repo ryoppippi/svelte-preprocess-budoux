@@ -4,3 +4,5 @@
 /.coverage
 /npm
 .eslintcache
+
+/jsr.json
