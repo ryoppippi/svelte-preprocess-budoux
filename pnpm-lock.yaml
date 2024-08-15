@@ -70,7 +70,7 @@ importers:
   examples/hooks-sveltekit:
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.2.3
+        specifier: ^3.2.4
         version: 3.2.4(@sveltejs/kit@2.5.22(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.219)(vite@5.4.0(@types/node@22.2.0)))(svelte@5.0.0-next.219)(vite@5.4.0(@types/node@22.2.0)))
       '@sveltejs/kit':
         specifier: ^2.5.21
@@ -100,7 +100,7 @@ importers:
   examples/preproccessor-sveltekit:
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.2.3
+        specifier: ^3.2.4
         version: 3.2.4(@sveltejs/kit@2.5.22(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.219)(vite@5.4.0(@types/node@22.2.0)))(svelte@5.0.0-next.219)(vite@5.4.0(@types/node@22.2.0)))
       '@sveltejs/kit':
         specifier: ^2.5.21
