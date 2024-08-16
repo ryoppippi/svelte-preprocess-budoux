@@ -46,7 +46,7 @@
 		"budoux": "^0.6.2",
 		"defu": "^6.1.4",
 		"magic-string": "^0.30.11",
-		"svelte": "^5.0.0-next.217",
+		"svelte": "^5.0.0-next.219",
 		"svelte-parse-markup": "^0.1.5"
 	},
 	"devDependencies": {
