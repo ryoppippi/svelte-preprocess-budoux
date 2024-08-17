@@ -1,4 +1,4 @@
-import defu from 'defu';
+import { type Defu, defu } from 'defu';
 import * as budoux from 'budoux';
 import type { Options } from './types';
 import { DEFAULT_OPTIONS } from './types';
@@ -6,7 +6,7 @@ import { DEFAULT_OPTIONS } from './types';
 export type HTMLProcessingParser = budoux.HTMLProcessingParser;
 export type Language = Exclude<Options['language'], null | undefined>;
 
-export function resolveOptions(options: Options) {
+export function resolveOptions(options: Options): Defu<Options, [typeof DEFAULT_OPTIONS]> {
 	return defu(options, DEFAULT_OPTIONS);
 }
 
