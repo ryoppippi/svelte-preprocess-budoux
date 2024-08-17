@@ -17,12 +17,18 @@ importers:
       magic-string:
         specifier: ^0.30.11
         version: 0.30.11
+      node-html-parser:
+        specifier: ^6.1.13
+        version: 6.1.13
       svelte:
         specifier: ^5.0.0-next.220
         version: 5.0.0-next.222
       svelte-parse-markup:
         specifier: ^0.1.5
         version: 0.1.5(svelte@5.0.0-next.222)
+      zimmerframe:
+        specifier: ^1.1.2
+        version: 1.1.2
     devDependencies:
       '@antfu/ni':
         specifier: ^0.22.1
@@ -51,9 +57,6 @@ importers:
       mkdist:
         specifier: ^1.5.4
         version: 1.5.4(typescript@5.5.4)
-      node-html-parser:
-        specifier: ^6.1.13
-        version: 6.1.13
       svelte-eslint-parser:
         specifier: ^0.41.0
         version: 0.41.0(svelte@5.0.0-next.222)
@@ -63,9 +66,6 @@ importers:
       vitest:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@22.4.0)(jsdom@23.2.0)
-      zimmerframe:
-        specifier: ^1.1.2
-        version: 1.1.2
 
   examples/hooks-sveltekit:
     devDependencies:
