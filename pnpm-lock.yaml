@@ -21,7 +21,7 @@ importers:
         specifier: ^6.1.13
         version: 6.1.13
       svelte:
-        specifier: ^5.0.0-next.220
+        specifier: ^5.0.0-next.221
         version: 5.0.0-next.222
       svelte-parse-markup:
         specifier: ^0.1.5
@@ -79,7 +79,7 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(svelte@5.0.0-next.222)(vite@5.4.0(@types/node@22.4.0))
       svelte:
-        specifier: ^5.0.0-next.220
+        specifier: ^5.0.0-next.221
         version: 5.0.0-next.222
       svelte-check:
         specifier: ^3.8.5
@@ -109,7 +109,7 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(svelte@5.0.0-next.222)(vite@5.4.0(@types/node@22.4.0))
       svelte:
-        specifier: ^5.0.0-next.220
+        specifier: ^5.0.0-next.221
         version: 5.0.0-next.222
       svelte-check:
         specifier: ^3.8.5
