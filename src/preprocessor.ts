@@ -25,13 +25,14 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 			const state = [] as { start: number; end: number; parsed: string }[];
 
 			walk(ast.html as TemplateNode, state, {
-				Element(node, { state }) {
+				Element(node, { state, next }) {
 					const dataAttr = node?.attributes
 						?.filter(attr => attr.type === 'Attribute')
 						.find(attr => attr.name === attribute);
 
 					/* if the node does not have the data-budoux attribute, we don't care about it */
 					if (dataAttr == null) {
+						next(state);
 						return;
 					}
 
