@@ -32,8 +32,7 @@ function budouxPreprocess(options: Options = {}): PreprocessorGroup {
 
 					/* if the node does not have the data-budoux attribute, we don't care about it */
 					if (dataAttr == null) {
-						next(state);
-						return;
+						return next(state);
 					}
 
 					const parserLanguage: Language = (() => {
