@@ -82,7 +82,7 @@ importers:
         specifier: ^5.0.0-next.243
         version: 5.0.0-next.244
       svelte-check:
-        specifier: ^4.0.0
+        specifier: ^4.0.1
         version: 4.0.1(picomatch@4.0.2)(svelte@5.0.0-next.244)(typescript@5.5.4)
       svelte-preprocess-budoux:
         specifier: workspace:*
@@ -112,7 +112,7 @@ importers:
         specifier: ^5.0.0-next.243
         version: 5.0.0-next.244
       svelte-check:
-        specifier: ^4.0.0
+        specifier: ^4.0.1
         version: 4.0.1(picomatch@4.0.2)(svelte@5.0.0-next.244)(typescript@5.5.4)
       svelte-preprocess-budoux:
         specifier: workspace:*
@@ -1998,9 +1998,6 @@ packages:
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
     engines: {node: '>= 14.16'}
-
-  picocolors@1.0.1:
-    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
@@ -4712,8 +4709,6 @@ snapshots:
 
   pathval@2.0.0: {}
 
-  picocolors@1.0.1: {}
-
   picocolors@1.1.0: {}
 
   picomatch@2.3.1: {}
@@ -5116,7 +5111,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 3.6.0
       fdir: 6.3.0(picomatch@4.0.2)
-      picocolors: 1.0.1
+      picocolors: 1.1.0
       sade: 1.8.1
       svelte: 5.0.0-next.244
       typescript: 5.5.4
