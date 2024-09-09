@@ -55,8 +55,8 @@ importers:
         specifier: ^2.43.0
         version: 2.43.0(eslint@9.9.1(jiti@1.21.6))(svelte@5.0.0-next.244)
       mkdist:
-        specifier: ^1.5.5
-        version: 1.5.5(typescript@5.5.4)
+        specifier: ^1.5.6
+        version: 1.5.6(typescript@5.5.4)
       svelte-eslint-parser:
         specifier: ^0.41.0
         version: 0.41.0(svelte@5.0.0-next.244)
@@ -1848,11 +1848,11 @@ packages:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mkdist@1.5.5:
-    resolution: {integrity: sha512-Kbj0Tt4uk6AN/XEV1W7EgBpJUmEXZgTWxbMKYIpO0hRXoTstFIJrJVqDgPjBz9AXXN3ZpxQBk2Q0n28Ze0Gh1w==}
+  mkdist@1.5.6:
+    resolution: {integrity: sha512-QwIZ9Fdtuzinz1Gzlc7gQq/4WNUVBnPk90PASUYD2hbvfeJsnzb+gUsn+iTZv8RJ5oOkP1FJn/pXscH3qPaL/w==}
     hasBin: true
     peerDependencies:
-      sass: ^1.77.8
+      sass: ^1.78.0
       typescript: '>=5.5.4'
       vue-tsc: ^1.8.27 || ^2.0.21
     peerDependenciesMeta:
@@ -4538,7 +4538,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  mkdist@1.5.5(typescript@5.5.4):
+  mkdist@1.5.6(typescript@5.5.4):
     dependencies:
       autoprefixer: 10.4.20(postcss@8.4.45)
       citty: 0.1.6
