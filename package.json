@@ -60,7 +60,7 @@
 		"@types/node": "^22.5.4",
 		"eslint": "^9.9.1",
 		"eslint-plugin-svelte": "^2.43.0",
-		"mkdist": "^1.5.5",
+		"mkdist": "^1.5.6",
 		"svelte-eslint-parser": "^0.41.0",
 		"typescript": "^5.5.4",
 		"vitest": "^2.0.5"
