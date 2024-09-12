@@ -62,7 +62,7 @@
 		"eslint-plugin-svelte": "^2.43.0",
 		"mkdist": "^1.5.7",
 		"svelte-eslint-parser": "^0.41.0",
-		"typescript": "^5.5.4",
+		"typescript": "^5.6.2",
 		"vitest": "^2.0.5"
 	}
 }
