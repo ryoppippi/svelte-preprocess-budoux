@@ -40,7 +40,7 @@ importers:
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.23
         version: '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.12.0(jiti@1.21.6))(typescript@5.6.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.12.0(jiti@1.21.6)))(eslint-plugin-svelte@2.44.1(eslint@9.12.0(jiti@1.21.6))(svelte@5.0.0-next.262))(eslint@9.12.0(jiti@1.21.6))(svelte-eslint-parser@0.41.1(svelte@5.0.0-next.262))(svelte@5.0.0-next.262)(typescript@5.6.2)(vitest@2.1.2(@types/node@22.7.4)(jsdom@23.2.0))'
       '@sveltejs/kit':
-        specifier: ^2.6.2
+        specifier: ^2.6.3
         version: 2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4))
       '@types/estree':
         specifier: ^1.0.6
@@ -73,7 +73,7 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))
       '@sveltejs/kit':
-        specifier: ^2.6.2
+        specifier: ^2.6.3
         version: 2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.1.2
@@ -103,7 +103,7 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))
       '@sveltejs/kit':
-        specifier: ^2.6.2
+        specifier: ^2.6.3
         version: 2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4)))(svelte@5.0.0-next.262)(vite@5.4.8(@types/node@22.7.4))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.1.2
