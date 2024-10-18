@@ -54,7 +54,7 @@
 	"devDependencies": {
 		"@antfu/ni": "^0.23.0",
 		"@babel/types": "^7.25.8",
-		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.23",
+		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.24",
 		"@sveltejs/kit": "^2.7.1",
 		"@types/estree": "^1.0.6",
 		"@types/node": "^22.7.5",
