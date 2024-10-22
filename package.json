@@ -57,7 +57,7 @@
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.23",
 		"@sveltejs/kit": "^2.7.1",
 		"@types/estree": "^1.0.6",
-		"@types/node": "^22.7.6",
+		"@types/node": "^22.7.7",
 		"eslint": "^9.13.0",
 		"eslint-plugin-svelte": "^2.45.1",
 		"mkdist": "^1.6.0",
