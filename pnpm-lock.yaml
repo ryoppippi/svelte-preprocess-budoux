@@ -70,8 +70,8 @@ importers:
   examples/hooks-sveltekit:
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.2.5
-        version: 3.2.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))
+        specifier: ^3.3.0
+        version: 3.3.1(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))
       '@sveltejs/kit':
         specifier: ^2.7.2
         version: 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9))
@@ -100,8 +100,8 @@ importers:
   examples/preproccessor-sveltekit:
     devDependencies:
       '@sveltejs/adapter-auto':
-        specifier: ^3.2.5
-        version: 3.2.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))
+        specifier: ^3.3.0
+        version: 3.3.1(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))
       '@sveltejs/kit':
         specifier: ^2.7.2
         version: 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9))
@@ -707,8 +707,8 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@sveltejs/adapter-auto@3.2.5':
-    resolution: {integrity: sha512-27LR+uKccZ62lgq4N/hvyU2G+hTP9fxWEAfnZcl70HnyfAjMSsGk1z/SjAPXNCD1mVJIE7IFu3TQ8cQ/UH3c0A==}
+  '@sveltejs/adapter-auto@3.3.1':
+    resolution: {integrity: sha512-5Sc7WAxYdL6q9j/+D0jJKjGREGlfIevDyHSQ2eNETHcB1TKlQWHcAo8AS8H1QdjNvSXpvOwNjykDUHPEAyGgdQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -3151,7 +3151,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))':
+  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))':
     dependencies:
       '@sveltejs/kit': 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9)))(svelte@5.0.5)(vite@5.4.9(@types/node@22.7.9))
       import-meta-resolve: 4.1.0
