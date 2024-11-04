@@ -55,7 +55,7 @@
 		"@antfu/ni": "^0.23.0",
 		"@babel/types": "^7.26.0",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.23",
-		"@sveltejs/kit": "^2.7.3",
+		"@sveltejs/kit": "^2.7.4",
 		"@types/estree": "^1.0.6",
 		"@types/node": "^22.8.6",
 		"eslint": "^9.13.0",
