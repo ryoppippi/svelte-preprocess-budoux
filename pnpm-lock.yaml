@@ -15,8 +15,8 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
       magic-string:
-        specifier: ^0.30.14
-        version: 0.30.14
+        specifier: ^0.30.15
+        version: 0.30.15
       node-html-parser:
         specifier: ^6.1.13
         version: 6.1.13
@@ -1814,8 +1814,8 @@ packages:
   loupe@3.1.2:
     resolution: {integrity: sha512-23I4pFZHmAemUnz8WZXbYRSKYj801VDaNv9ETuMh7IrMc7VuVVSo+Z9iLE3ni30+U48iDWfi30d3twAXBYmnCg==}
 
-  magic-string@0.30.14:
-    resolution: {integrity: sha512-5c99P1WKTed11ZC0HMJOj6CDIue6F8ySu+bJL+85q1zBEIY8IklrJ1eiKC2NDRh3Ct3FcvmJPyQHb9erXMTJNw==}
+  magic-string@0.30.15:
+    resolution: {integrity: sha512-zXeaYRgZ6ldS1RJJUrMrYgNJ4fdwnyI6tVqoiIhyCyv5IVTK9BU8Ic2l253GGETQHxI4HNUwhJ3fjDhKqEoaAw==}
 
   mdast-util-from-markdown@0.8.5:
     resolution: {integrity: sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==}
@@ -3233,7 +3233,7 @@ snapshots:
       esm-env: 1.2.1
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       mrmime: 2.0.0
       sade: 1.8.1
       set-cookie-parser: 2.7.0
@@ -3251,7 +3251,7 @@ snapshots:
       esm-env: 1.2.1
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       mrmime: 2.0.0
       sade: 1.8.1
       set-cookie-parser: 2.7.0
@@ -3284,7 +3284,7 @@ snapshots:
       debug: 4.3.7
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       svelte: 5.10.0
       vite: 5.4.11(@types/node@22.10.1)
       vitefu: 1.0.3(vite@5.4.11(@types/node@22.10.1))
@@ -3297,7 +3297,7 @@ snapshots:
       debug: 4.3.7
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       svelte: 5.10.0
       vite: 6.0.3(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.5.1)
       vitefu: 1.0.3(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.5.1))
@@ -3436,7 +3436,7 @@ snapshots:
     dependencies:
       '@vitest/spy': 2.1.8
       estree-walker: 3.0.3
-      magic-string: 0.30.14
+      magic-string: 0.30.15
     optionalDependencies:
       vite: 5.4.11(@types/node@22.10.1)
 
@@ -3452,7 +3452,7 @@ snapshots:
   '@vitest/snapshot@2.1.8':
     dependencies:
       '@vitest/pretty-format': 2.1.8
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       pathe: 1.1.2
 
   '@vitest/spy@2.1.8':
@@ -3486,7 +3486,7 @@ snapshots:
       '@vue/compiler-ssr': 3.4.35
       '@vue/shared': 3.4.35
       estree-walker: 2.0.2
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       postcss: 8.4.49
       source-map-js: 1.2.1
 
@@ -4528,7 +4528,7 @@ snapshots:
 
   loupe@3.1.2: {}
 
-  magic-string@0.30.14:
+  magic-string@0.30.15:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
@@ -5137,7 +5137,7 @@ snapshots:
       esrap: 1.2.3
       is-reference: 3.0.3
       locate-character: 3.0.0
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       zimmerframe: 1.1.2
 
   svgo@3.3.2:
@@ -5310,7 +5310,7 @@ snapshots:
       chai: 5.1.2
       debug: 4.3.7
       expect-type: 1.1.0
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       pathe: 1.1.2
       std-env: 3.8.0
       tinybench: 2.9.0
