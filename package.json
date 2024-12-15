@@ -47,7 +47,7 @@
 		"defu": "^6.1.4",
 		"magic-string": "^0.30.15",
 		"node-html-parser": "^6.1.13",
-		"svelte": "5.11.0",
+		"svelte": "5.11.2",
 		"svelte-parse-markup": "^0.1.5",
 		"zimmerframe": "^1.1.2"
 	},
