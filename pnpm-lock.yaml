@@ -55,7 +55,7 @@ importers:
         specifier: ^2.46.1
         version: 2.46.1(eslint@9.14.0(jiti@1.21.6))(svelte@5.14.0)
       mkdist:
-        specifier: ^2.0.1
+        specifier: ^2.1.0
         version: 2.1.0(typescript@5.7.2)
       svelte-eslint-parser:
         specifier: ^0.43.0
@@ -4548,8 +4548,8 @@ snapshots:
 
   local-pkg@0.5.0:
     dependencies:
-      mlly: 1.7.1
-      pkg-types: 1.2.0
+      mlly: 1.7.3
+      pkg-types: 1.2.1
 
   locate-character@3.0.0: {}
 
