@@ -46,7 +46,7 @@
 		"budoux": "^0.6.3",
 		"defu": "^6.1.4",
 		"magic-string": "^0.30.17",
-		"node-html-parser": "^6.1.13",
+		"node-html-parser": "^7.0.1",
 		"svelte": "5.16.0",
 		"svelte-parse-markup": "^0.1.5",
 		"zimmerframe": "^1.1.2"
