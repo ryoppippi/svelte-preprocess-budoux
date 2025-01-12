@@ -52,7 +52,7 @@
 		"zimmerframe": "^1.1.2"
 	},
 	"devDependencies": {
-		"@antfu/ni": "^0.23.2",
+		"@antfu/ni": "^23.2.0",
 		"@babel/types": "^7.26.3",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.23",
 		"@sveltejs/kit": "^2.15.2",
