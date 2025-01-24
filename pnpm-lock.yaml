@@ -94,7 +94,7 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       vite:
-        specifier: ^6.0.9
+        specifier: ^6.0.11
         version: 6.0.11(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.5.1)
 
   examples/preproccessor-sveltekit:
@@ -124,7 +124,7 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       vite:
-        specifier: ^6.0.9
+        specifier: ^6.0.11
         version: 6.0.11(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.5.1)
 
 packages:
