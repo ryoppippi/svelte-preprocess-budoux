@@ -43,7 +43,7 @@
 		"release:jsr": "nlx pkg-to-jsr && nlx jsr publish --allow-dirty"
 	},
 	"dependencies": {
-		"budoux": "^0.6.3",
+		"budoux": "^0.6.4",
 		"defu": "^6.1.4",
 		"magic-string": "^0.30.17",
 		"node-html-parser": "^7.0.1",
