@@ -59,7 +59,7 @@
 		"@types/estree": "^1.0.6",
 		"@types/node": "^22.13.5",
 		"eslint": "^9.14.0",
-		"eslint-plugin-svelte": "^3.0.0",
+		"eslint-plugin-svelte": "^3.0.2",
 		"mkdist": "^2.2.0",
 		"svelte-eslint-parser": "^1.0.0",
 		"typescript": "^5.7.3",

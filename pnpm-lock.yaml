@@ -52,7 +52,7 @@ importers:
         specifier: ^9.14.0
         version: 9.14.0(jiti@1.21.7)
       eslint-plugin-svelte:
-        specifier: ^3.0.0
+        specifier: ^3.0.2
         version: 3.0.2(eslint@9.14.0(jiti@1.21.7))(svelte@5.20.4)
       mkdist:
         specifier: ^2.2.0
@@ -3542,7 +3542,7 @@ snapshots:
 
   '@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.7.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       '@typescript-eslint/scope-manager': 8.4.0
       '@typescript-eslint/types': 8.4.0
       '@typescript-eslint/typescript-estree': 8.4.0(typescript@5.7.3)
@@ -4099,7 +4099,7 @@ snapshots:
 
   eslint-plugin-es-x@7.8.0(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       '@eslint-community/regexpp': 4.11.0
       eslint: 9.14.0(jiti@1.21.7)
       eslint-compat-utils: 0.5.1(eslint@9.14.0(jiti@1.21.7))
@@ -4152,7 +4152,7 @@ snapshots:
 
   eslint-plugin-jsonc@2.16.0(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       eslint: 9.14.0(jiti@1.21.7)
       eslint-compat-utils: 0.5.1(eslint@9.14.0(jiti@1.21.7))
       espree: 9.6.1
@@ -4170,7 +4170,7 @@ snapshots:
 
   eslint-plugin-n@17.10.2(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       enhanced-resolve: 5.17.1
       eslint: 9.14.0(jiti@1.21.7)
       eslint-plugin-es-x: 7.8.0(eslint@9.14.0(jiti@1.21.7))
@@ -4199,7 +4199,7 @@ snapshots:
 
   eslint-plugin-regexp@2.6.0(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       '@eslint-community/regexpp': 4.11.0
       comment-parser: 1.4.1
       eslint: 9.14.0(jiti@1.21.7)
@@ -4239,7 +4239,7 @@ snapshots:
   eslint-plugin-unicorn@55.0.0(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
       '@babel/helper-validator-identifier': 7.25.9
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       ci-info: 4.0.0
       clean-regexp: 1.0.0
       core-js-compat: 3.38.1
@@ -4264,7 +4264,7 @@ snapshots:
 
   eslint-plugin-vue@9.28.0(eslint@9.14.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.14.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       eslint: 9.14.0(jiti@1.21.7)
       globals: 13.24.0
       natural-compare: 1.4.0
