@@ -31,8 +31,8 @@ importers:
         version: 1.1.2
     devDependencies:
       '@antfu/ni':
-        specifier: ^24.1.0
-        version: 24.1.0
+        specifier: ^24.2.0
+        version: 24.2.0
       '@babel/types':
         specifier: ^7.26.10
         version: 7.26.10
@@ -182,8 +182,8 @@ packages:
   '@antfu/install-pkg@0.4.1':
     resolution: {integrity: sha512-T7yB5QNG29afhWVkVq7XeIMBa5U/vs9mX69YqayXypPRmYzUmzwnYltplHmPtZ4HPCn+sQKeXW8I47wCbuBOjw==}
 
-  '@antfu/ni@24.1.0':
-    resolution: {integrity: sha512-Pq54C1N16BjLX4aHd7VJiuqxl+KoT9wOSyAZSnC2qDf1MraZ2c2b6FldjfeNsP1HBPvNhlCmZI91bNdmwXuuWQ==}
+  '@antfu/ni@24.2.0':
+    resolution: {integrity: sha512-+B9wzpv+KOhqbOgHjHcBAX7IwIKdDt4SFzYlxIPr4srANFJfjAABC7nU8KNFba+DYLymRe2EPSUfE7+reJb5UA==}
     hasBin: true
 
   '@antfu/utils@0.7.10':
@@ -2933,7 +2933,7 @@ snapshots:
       package-manager-detector: 0.2.0
       tinyexec: 0.3.2
 
-  '@antfu/ni@24.1.0':
+  '@antfu/ni@24.2.0':
     dependencies:
       ansis: 3.17.0
       fzf: 0.5.2
