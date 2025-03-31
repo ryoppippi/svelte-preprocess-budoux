@@ -1,7 +1,7 @@
 {
 	"name": "svelte-preprocess-budoux",
 	"type": "module",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"packageManager": "pnpm@10.7.0",
 	"description": "svelte-preprocess plugin for Budoux",
 	"author": "ryoppippi",
