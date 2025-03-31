@@ -42,12 +42,14 @@
 		"release:npm": "npm publish",
 		"release:jsr": "nlx pkg-to-jsr && nlx jsr publish --allow-dirty"
 	},
+	"peerDependencies": {
+		"svelte": ">= 5.0.0"
+	},
 	"dependencies": {
 		"budoux": "^0.6.4",
 		"defu": "^6.1.4",
 		"magic-string": "^0.30.17",
 		"node-html-parser": "^7.0.1",
-		"svelte": "5.25.3",
 		"svelte-parse-markup": "^0.1.5",
 		"zimmerframe": "^1.1.2"
 	},
@@ -61,6 +63,7 @@
 		"eslint": "^9.14.0",
 		"eslint-plugin-svelte": "^3.3.3",
 		"mkdist": "^2.2.0",
+		"svelte": "5.25.3",
 		"svelte-eslint-parser": "^1.1.1",
 		"typescript": "^5.8.2",
 		"vitest": "^3.0.9"
