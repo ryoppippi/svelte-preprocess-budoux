@@ -8,7 +8,6 @@ import { getParser, resolveOptions } from './utils';
 export function budouxHandle(options: Options = {}): Handle {
 	const { language, attribute } = resolveOptions(options);
 
-	// eslint-disable-next-line ts/unbound-method
 	return async ({ event, resolve }) => {
 		return resolve(event, {
 			transformPageChunk: async ({ html }) => {
