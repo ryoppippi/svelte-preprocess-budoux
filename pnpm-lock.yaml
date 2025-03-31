@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      budoux:
-        specifier: ^0.6.4
-        version: 0.6.4
       defu:
         specifier: ^6.1.4
         version: 6.1.4
@@ -45,6 +42,9 @@ importers:
       '@types/node':
         specifier: ^22.13.14
         version: 22.13.14
+      budoux:
+        specifier: ^0.6.4
+        version: 0.6.4
       eslint:
         specifier: ^9.14.0
         version: 9.14.0(jiti@1.21.7)

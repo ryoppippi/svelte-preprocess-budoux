@@ -8,6 +8,16 @@
 
 ![Screenshot 2024-07-11 at 11 39 44](https://github.com/ryoppippi/svelte-preprocess-budoux/assets/1560508/03fd68d9-58fc-445b-8186-a42f22114ae2)
 
+## Installation
+
+```bash
+npm install -D svelte-preprocess-budoux budoux
+
+# or
+
+npx jsr install -D @ryoppippi/svelte-preprocess-budoux
+```
+
 ## Configuration
 
 You can choose svelte prerocessor or sveltekit hooks
