@@ -43,7 +43,7 @@
 		"release:jsr": "nlx pkg-to-jsr && nlx jsr publish --allow-dirty"
 	},
 	"peerDependencies": {
-		"svelte": ">= 5.0.0"
+		"svelte": ">= 5.25.3"
 	},
 	"dependencies": {
 		"budoux": "^0.6.4",
