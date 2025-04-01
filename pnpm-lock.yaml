@@ -32,7 +32,7 @@ importers:
         version: 7.27.0
       '@ryoppippi/eslint-config':
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.23
-        version: '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))'
+        version: '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))'
       '@sveltejs/kit':
         specifier: ^2.20.2
         version: 2.20.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.25.3)(vite@6.2.2(@types/node@22.13.14)(jiti@1.21.7)(yaml@2.5.1)))(svelte@5.25.3)(vite@6.2.2(@types/node@22.13.14)(jiti@1.21.7)(yaml@2.5.1))
@@ -49,8 +49,8 @@ importers:
         specifier: ^9.14.0
         version: 9.14.0(jiti@1.21.7)
       eslint-plugin-svelte:
-        specifier: ^3.3.3
-        version: 3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3)
+        specifier: ^3.4.0
+        version: 3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3)
       mkdist:
         specifier: ^2.2.0
         version: 2.2.0(typescript@5.8.2)
@@ -1461,8 +1461,8 @@ packages:
     peerDependencies:
       eslint: '>=8.44.0'
 
-  eslint-plugin-svelte@3.3.3:
-    resolution: {integrity: sha512-imzGqIgWbfsb/CR14d3k3M8MiVNGet+l9mjPhvo1Rm0Nxi0rNn4/eELqyR8FWlgKBMlGkOp2kshRJm0xpxNfHQ==}
+  eslint-plugin-svelte@3.5.0:
+    resolution: {integrity: sha512-986WKRAFoS5KN/jc0Z06akYxfNs+obca486sf9Y+0VbjRUfqJZYX/HSQR/js3xd3enrFqDLg8MToWgDOvCQUqQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.1 || ^9.0.0
@@ -2884,7 +2884,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@2.27.3(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))':
+  '@antfu/eslint-config@2.27.3(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
@@ -2924,7 +2924,7 @@ snapshots:
       yargs: 17.7.2
     optionalDependencies:
       eslint-plugin-format: 0.1.2(eslint@9.14.0(jiti@1.21.7))
-      eslint-plugin-svelte: 3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3)
+      eslint-plugin-svelte: 3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3)
       svelte-eslint-parser: 1.1.1(svelte@5.25.3)
     transitivePeerDependencies:
       - '@typescript-eslint/utils'
@@ -3268,9 +3268,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))':
+  '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))':
     dependencies:
-      '@antfu/eslint-config': 2.27.3(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))
+      '@antfu/eslint-config': 2.27.3(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.8.2))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@1.21.7)))(eslint-plugin-svelte@3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3))(eslint@9.14.0(jiti@1.21.7))(svelte-eslint-parser@1.1.1(svelte@5.25.3))(svelte@5.25.3)(typescript@5.8.2)(vitest@3.0.9(@types/node@22.13.14)(jiti@1.21.7)(jsdom@26.0.0)(yaml@2.5.1))
       defu: 6.1.4
       pkg-types: 1.2.0
     transitivePeerDependencies:
@@ -4233,7 +4233,7 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-svelte@3.3.3(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3):
+  eslint-plugin-svelte@3.5.0(eslint@9.14.0(jiti@1.21.7))(svelte@5.25.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.14.0(jiti@1.21.7))
       '@jridgewell/sourcemap-codec': 1.5.0
