@@ -44,7 +44,7 @@
 	},
 	"peerDependencies": {
 		"budoux": "^0.6.4",
-		"svelte": ">= 5.25.9"
+		"svelte": ">= 5.25.10"
 	},
 	"dependencies": {
 		"defu": "^6.1.4",
@@ -64,7 +64,7 @@
 		"eslint": "^9.14.0",
 		"eslint-plugin-svelte": "^3.5.1",
 		"mkdist": "^2.3.0",
-		"svelte": "5.25.9",
+		"svelte": "5.25.10",
 		"svelte-eslint-parser": "^1.1.2",
 		"typescript": "^5.8.3",
 		"vitest": "^3.1.1"
