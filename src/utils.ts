@@ -26,8 +26,7 @@ export function getParser(
 		case 'th':
 			return parserCache.th ??= budoux.loadDefaultThaiParser();
 		default:
-      language satisfies never;
-			// eslint-disable-next-line ts/restrict-template-expressions
-			throw new Error(`Language ${language} is not supported`);
+			language satisfies never;
+			throw new Error(`Language ${language as string} is not supported`);
 	}
 }
