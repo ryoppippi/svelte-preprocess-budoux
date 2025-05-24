@@ -32,7 +32,7 @@
 		"tests"
 	],
 	"scripts": {
-		"build": "tsdown src --dts --sourcemap --publint --unused",
+		"build": "tsdown src --dts --sourcemap --publint --unused --unbundle",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint --cache .",
 		"format": "nr lint --fix",
