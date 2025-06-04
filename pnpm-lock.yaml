@@ -61,8 +61,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(svelte@5.33.11)
       tsdown:
-        specifier: ^0.12.5
-        version: 0.12.5(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0)
+        specifier: ^0.12.6
+        version: 0.12.6(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -1566,9 +1566,6 @@ packages:
   get-tsconfig@4.10.1:
     resolution: {integrity: sha512-auHyJ4AgMz7vgS8Hp3N6HXSmlMdUyhSUrfBF16w153rxtLIEOE+HGqaBppczZvnHLqQJfiHotCYpNhl0lUROFQ==}
 
-  get-tsconfig@4.8.0:
-    resolution: {integrity: sha512-Pgba6TExTZ0FJAn1qkJAjIeKoDJ3CsI2ChuLohJnZl/tTU8MVrq3b+2t5UOPfRa4RMsorClBjJALkJUMjG1PAw==}
-
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -2336,16 +2333,19 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  tsdown@0.12.5:
-    resolution: {integrity: sha512-5tzqVakJOdIVJLBB6K1e7L4pPTkyLxArkidwsY1jd4P1/4GplYxeHGRmGz8evsXaPJW6IumdbDvIVnmWMnIy2A==}
+  tsdown@0.12.6:
+    resolution: {integrity: sha512-NIqmptXCYc0iZzSGNpFtWATTDM5MyqDfV7bhgqfrw8KJlEFLI9zYyF4uFDheEvudTMNH5dkcQUJaklpmHsA37A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
+      '@arethetypeswrong/core': ^0.18.1
       publint: ^0.3.0
       typescript: ^5.0.0
       unplugin-lightningcss: ^0.4.0
       unplugin-unused: ^0.5.0
     peerDependenciesMeta:
+      '@arethetypeswrong/core':
+        optional: true
       publint:
         optional: true
       typescript:
@@ -3713,7 +3713,7 @@ snapshots:
       doctrine: 3.0.0
       eslint: 9.14.0(jiti@2.4.2)
       eslint-import-resolver-node: 0.3.9
-      get-tsconfig: 4.8.0
+      get-tsconfig: 4.10.1
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.7.2
@@ -3764,7 +3764,7 @@ snapshots:
       enhanced-resolve: 5.17.1
       eslint: 9.14.0(jiti@2.4.2)
       eslint-plugin-es-x: 7.8.0(eslint@9.14.0(jiti@2.4.2))
-      get-tsconfig: 4.8.0
+      get-tsconfig: 4.10.1
       globals: 15.9.0
       ignore: 5.3.2
       minimatch: 9.0.5
@@ -4046,10 +4046,6 @@ snapshots:
   get-caller-file@2.0.5: {}
 
   get-tsconfig@4.10.1:
-    dependencies:
-      resolve-pkg-maps: 1.0.0
-
-  get-tsconfig@4.8.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -4825,7 +4821,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  tsdown@0.12.5(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0):
+  tsdown@0.12.6(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
