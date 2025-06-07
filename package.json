@@ -74,6 +74,6 @@
 		"tsdown": "^0.12.6",
 		"typescript": "^5.8.3",
 		"unplugin-unused": "^0.5.0",
-		"vitest": "^3.1.4"
+		"vitest": "^3.2.1"
 	}
 }
