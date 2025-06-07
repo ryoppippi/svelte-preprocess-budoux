@@ -2,7 +2,7 @@
 	"name": "svelte-preprocess-budoux",
 	"type": "module",
 	"version": "1.1.2",
-	"packageManager": "pnpm@10.11.0",
+	"packageManager": "pnpm@10.11.1",
 	"description": "svelte-preprocess plugin for Budoux",
 	"author": "ryoppippi",
 	"license": "MIT",
