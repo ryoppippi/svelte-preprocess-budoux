@@ -62,13 +62,13 @@ importers:
         version: 1.2.0(svelte@5.33.18)
       tsdown:
         specifier: ^0.12.7
-        version: 0.12.7(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0)
+        version: 0.12.7(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.1)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
       unplugin-unused:
-        specifier: ^0.5.0
-        version: 0.5.0
+        specifier: ^0.5.1
+        version: 0.5.1
       vitest:
         specifier: ^3.2.2
         version: 3.2.2(@types/node@22.15.30)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.5.1)
@@ -2403,12 +2403,12 @@ packages:
   unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
 
-  unplugin-unused@0.5.0:
-    resolution: {integrity: sha512-czXny3h/P/Tl5ZOnV5tSf6kswAniHjgJF0slpzBPLkq0zGGKDYa1jgWMAdbWJNu7B1YSmBJY4zf3Q/v9w0+/cg==}
+  unplugin-unused@0.5.1:
+    resolution: {integrity: sha512-USnsy4XsInQFcIb/kSt5HbTkwIIYfW1ujGN0jPanq76IvG7RsqHPk4kJqDoZSqCgDkTjolr72a/f7K1Hr2XmWg==}
     engines: {node: '>=20.18.0'}
 
-  unplugin@2.3.4:
-    resolution: {integrity: sha512-m4PjxTurwpWfpMomp8AptjD5yj8qEZN5uQjjGM3TAs9MWWD2tXSSNNj6jGR2FoVGod4293ytyV6SwBbertfyJg==}
+  unplugin@2.3.5:
+    resolution: {integrity: sha512-RyWSb5AHmGtjjNQ6gIlA67sHOsWpsbWpwDokLwTcejVdOjEkJZh7QKu14J00gDDVSh8kGH4KYC/TNBceXFZhtw==}
     engines: {node: '>=18.12.0'}
 
   update-browserslist-db@1.1.0:
@@ -4864,7 +4864,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  tsdown@0.12.7(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0):
+  tsdown@0.12.7(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.1):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
@@ -4882,7 +4882,7 @@ snapshots:
     optionalDependencies:
       publint: 0.3.12
       typescript: 5.8.3
-      unplugin-unused: 0.5.0
+      unplugin-unused: 0.5.1
     transitivePeerDependencies:
       - '@typescript/native-preview'
       - oxc-resolver
@@ -4918,14 +4918,14 @@ snapshots:
     dependencies:
       '@types/unist': 2.0.11
 
-  unplugin-unused@0.5.0:
+  unplugin-unused@0.5.1:
     dependencies:
       js-tokens: 9.0.1
       picocolors: 1.1.1
       pkg-types: 2.1.0
-      unplugin: 2.3.4
+      unplugin: 2.3.5
 
-  unplugin@2.3.4:
+  unplugin@2.3.5:
     dependencies:
       acorn: 8.14.1
       picomatch: 4.0.2
