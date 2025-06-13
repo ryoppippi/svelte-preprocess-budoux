@@ -34,7 +34,7 @@ importers:
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.23
         version: '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@2.4.2)))(eslint-plugin-svelte@3.9.2(eslint@9.14.0(jiti@2.4.2))(svelte@5.33.18))(eslint@9.14.0(jiti@2.4.2))(svelte-eslint-parser@1.2.0(svelte@5.33.18))(svelte@5.33.18)(typescript@5.8.3)(vitest@3.2.3(@types/node@22.15.31)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.5.1))'
       '@sveltejs/kit':
-        specifier: ^2.21.3
+        specifier: ^2.21.4
         version: 2.21.4(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1))
       '@types/estree':
         specifier: ^1.0.8
@@ -79,7 +79,7 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(@sveltejs/kit@2.21.4(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))
       '@sveltejs/kit':
-        specifier: ^2.21.3
+        specifier: ^2.21.4
         version: 2.21.4(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.1.0
@@ -109,7 +109,7 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(@sveltejs/kit@2.21.4(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))
       '@sveltejs/kit':
-        specifier: ^2.21.3
+        specifier: ^2.21.4
         version: 2.21.4(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1)))(svelte@5.33.18)(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(yaml@2.5.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.1.0
