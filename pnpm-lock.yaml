@@ -40,7 +40,7 @@ importers:
         specifier: ^1.0.8
         version: 1.0.8
       '@types/node':
-        specifier: ^24.0.7
+        specifier: ^24.0.8
         version: 24.0.8
       budoux:
         specifier: ^0.6.4
