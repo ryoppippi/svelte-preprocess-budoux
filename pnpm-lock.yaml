@@ -28,8 +28,8 @@ importers:
         specifier: ^25.0.0
         version: 25.0.0
       '@babel/types':
-        specifier: ^7.27.7
-        version: 7.27.7
+        specifier: ^7.28.0
+        version: 7.28.0
       '@ryoppippi/eslint-config':
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.23
         version: '@jsr/ryoppippi__eslint-config@0.0.23(@typescript-eslint/utils@8.4.0(eslint@9.14.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.14.0(jiti@2.4.2)))(eslint-plugin-svelte@3.10.1(eslint@9.14.0(jiti@2.4.2))(svelte@5.34.9))(eslint@9.14.0(jiti@2.4.2))(svelte-eslint-parser@1.2.0(svelte@5.34.9))(svelte@5.34.9)(typescript@5.8.3)(vitest@3.2.4(@types/node@24.0.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.5.1))'
@@ -223,8 +223,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/types@7.27.7':
-    resolution: {integrity: sha512-8OLQgDScAOHXnAz2cV+RfzzNMipuLVBz2biuAJFMV9bfkNf393je3VM8CLkjQodW5+iWsSJdSgSWT6rsZoXHPw==}
+  '@babel/types@7.28.0':
+    resolution: {integrity: sha512-jYnje+JyZG5YThjHiF28oT4SIZLnYOcSBb6+SDaFIyzDVSkXQmQQYclJ2R+YxcdmK0AX6x1E5OQNtuh3jHDrUg==}
     engines: {node: '>=6.9.0'}
 
   '@clack/core@0.3.4':
@@ -2759,7 +2759,7 @@ snapshots:
   '@babel/generator@7.27.5':
     dependencies:
       '@babel/parser': 7.27.5
-      '@babel/types': 7.27.7
+      '@babel/types': 7.28.0
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.0.2
@@ -2777,9 +2777,9 @@ snapshots:
 
   '@babel/parser@7.27.5':
     dependencies:
-      '@babel/types': 7.27.7
+      '@babel/types': 7.28.0
 
-  '@babel/types@7.27.7':
+  '@babel/types@7.28.0':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
@@ -4716,7 +4716,7 @@ snapshots:
     dependencies:
       '@babel/generator': 7.27.5
       '@babel/parser': 7.27.5
-      '@babel/types': 7.27.7
+      '@babel/types': 7.28.0
       ast-kit: 2.1.0
       birpc: 2.4.0
       debug: 4.4.1
