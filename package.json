@@ -67,7 +67,7 @@
 		"@types/node": "^24.0.14",
 		"budoux": "^0.6.4",
 		"eslint": "^9.14.0",
-		"eslint-plugin-svelte": "^3.10.1",
+		"eslint-plugin-svelte": "^3.11.0",
 		"publint": "^0.3.12",
 		"svelte": "5.36.2",
 		"svelte-eslint-parser": "^1.2.0",
