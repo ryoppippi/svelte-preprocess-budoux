@@ -62,13 +62,13 @@ importers:
         version: 1.3.1(svelte@5.38.1)
       tsdown:
         specifier: ^0.13.4
-        version: 0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.1)
+        version: 0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
       unplugin-unused:
-        specifier: ^0.5.1
-        version: 0.5.1
+        specifier: ^0.5.2
+        version: 0.5.2
       vitest:
         specifier: ^3.2.4
         version: 3.2.4(@types/node@24.3.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.5.1)
@@ -1050,6 +1050,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   agent-base@7.1.1:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
@@ -1607,8 +1612,8 @@ packages:
     resolution: {integrity: sha512-/kP8CAwxzLVEeFrMm4kMmy4CCDlpipyA7MYLVrdJIkV0fYF0UaigQHRsxHiuY/GEea+bh4KSv3TIlgr+2UL6bw==}
     engines: {node: '>=12.0.0'}
 
-  exsolve@1.0.5:
-    resolution: {integrity: sha512-pz5dvkYYKQ1AHVrgOzBKWeP4u4FRb3a6DNK2ucr0OoNwYIU4QWsJ+NM36LLzORT+z845MzKHHhpXiUF5nvQoJg==}
+  exsolve@1.0.7:
+    resolution: {integrity: sha512-VO5fQUzZtI6C+vx4w/4BWJpg3s/5l+6pRQEHzFRM8WFi4XffSP1Z+4qi7GbjWbvRQEbdIco5mIMq+zX4rPuLrw==}
 
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
@@ -2112,8 +2117,8 @@ packages:
   pkg-types@1.2.1:
     resolution: {integrity: sha512-sQoqa8alT3nHjGuTjuKgOnvjo4cljkufdtLMnO2LBP/wRwuDlo1tkaEdMxCRhyGRPacv/ztlZgDPm2b7FAmEvw==}
 
-  pkg-types@2.1.0:
-    resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
+  pkg-types@2.3.0:
+    resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
@@ -2537,12 +2542,12 @@ packages:
   unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
 
-  unplugin-unused@0.5.1:
-    resolution: {integrity: sha512-USnsy4XsInQFcIb/kSt5HbTkwIIYfW1ujGN0jPanq76IvG7RsqHPk4kJqDoZSqCgDkTjolr72a/f7K1Hr2XmWg==}
+  unplugin-unused@0.5.2:
+    resolution: {integrity: sha512-fn0DZrp96+NYo4U5UbLp1ZmZpBk/Z1RhjG2LvXfQxxw82dzciBxmx04ZgATxLZDD4HcGhdWlLIm2Gz1SVIBhDQ==}
     engines: {node: '>=20.18.0'}
 
-  unplugin@2.3.5:
-    resolution: {integrity: sha512-RyWSb5AHmGtjjNQ6gIlA67sHOsWpsbWpwDokLwTcejVdOjEkJZh7QKu14J00gDDVSh8kGH4KYC/TNBceXFZhtw==}
+  unplugin@2.3.7:
+    resolution: {integrity: sha512-zU7Osb4D5YNc9eLKsKaG6WQi9soLS+Yd9MDhOHlhAR+uoNy3BmWuddjLMhJpBpSBSIYtK5/MQvAWx9nAURTN6Q==}
     engines: {node: '>=18.12.0'}
 
   update-browserslist-db@1.1.0:
@@ -3663,6 +3668,8 @@ snapshots:
 
   acorn@8.14.1: {}
 
+  acorn@8.15.0: {}
+
   agent-base@7.1.1:
     dependencies:
       debug: 4.4.1
@@ -4300,7 +4307,7 @@ snapshots:
 
   expect-type@1.2.1: {}
 
-  exsolve@1.0.5: {}
+  exsolve@1.0.7: {}
 
   fast-deep-equal@3.1.3: {}
 
@@ -4776,10 +4783,10 @@ snapshots:
       mlly: 1.7.3
       pathe: 1.1.2
 
-  pkg-types@2.1.0:
+  pkg-types@2.3.0:
     dependencies:
       confbox: 0.2.2
-      exsolve: 1.0.5
+      exsolve: 1.0.7
       pathe: 2.0.3
 
   pluralize@8.0.0: {}
@@ -5182,7 +5189,7 @@ snapshots:
     dependencies:
       typescript: 5.9.2
 
-  tsdown@0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.1):
+  tsdown@0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
@@ -5201,7 +5208,7 @@ snapshots:
     optionalDependencies:
       publint: 0.3.12
       typescript: 5.9.2
-      unplugin-unused: 0.5.1
+      unplugin-unused: 0.5.2
     transitivePeerDependencies:
       - '@typescript/native-preview'
       - oxc-resolver
@@ -5237,17 +5244,18 @@ snapshots:
     dependencies:
       '@types/unist': 2.0.11
 
-  unplugin-unused@0.5.1:
+  unplugin-unused@0.5.2:
     dependencies:
       js-tokens: 9.0.1
       picocolors: 1.1.1
-      pkg-types: 2.1.0
-      unplugin: 2.3.5
+      pkg-types: 2.3.0
+      unplugin: 2.3.7
 
-  unplugin@2.3.5:
+  unplugin@2.3.7:
     dependencies:
-      acorn: 8.14.1
-      picomatch: 4.0.2
+      '@jridgewell/remapping': 2.3.5
+      acorn: 8.15.0
+      picomatch: 4.0.3
       webpack-virtual-modules: 0.6.2
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
