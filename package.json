@@ -62,7 +62,7 @@
 		"@antfu/ni": "^25.0.0",
 		"@babel/types": "^7.28.2",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.23",
-		"@sveltejs/kit": "^2.31.1",
+		"@sveltejs/kit": "^2.33.0",
 		"@types/estree": "^1.0.8",
 		"@types/node": "^24.3.0",
 		"budoux": "^0.6.4",
