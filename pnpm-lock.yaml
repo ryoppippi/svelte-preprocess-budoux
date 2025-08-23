@@ -61,8 +61,8 @@ importers:
         specifier: ^1.3.1
         version: 1.3.1(svelte@5.38.2)
       tsdown:
-        specifier: ^0.13.4
-        version: 0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2)
+        specifier: ^0.14.1
+        version: 0.14.1(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -2488,8 +2488,8 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  tsdown@0.13.5:
-    resolution: {integrity: sha512-lagBtBSdm1yWBFvAbg3+a2/x7eRNqsf5fv34doXXOGnxRIBlfzYCEVfK6cwOgkTNhORMhdWvaqtXZV3h2x1ojQ==}
+  tsdown@0.14.1:
+    resolution: {integrity: sha512-/nBuFDKZeYln9hAxwWG5Cm55/823sNIVI693iVi0xRFHzf9OVUq4b/lx9PH1TErFr/IQ0kd2hutFbJIPM0XQWA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -5115,7 +5115,7 @@ snapshots:
 
   tinyglobby@0.2.14:
     dependencies:
-      fdir: 6.4.6(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
   tinypool@1.1.1: {}
@@ -5154,7 +5154,7 @@ snapshots:
     dependencies:
       typescript: 5.9.2
 
-  tsdown@0.13.5(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2):
+  tsdown@0.14.1(publint@0.3.12)(typescript@5.9.2)(unplugin-unused@0.5.2):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
