@@ -1,5 +1,7 @@
 packages:
   - examples/*
 enablePrePostScripts: true
-onlyBuiltDependencies:
-  - esbuild
+ignoreWorkspaceRootCheck: true
+allowBuilds:
+  esbuild: true
+  unrs-resolver: false
