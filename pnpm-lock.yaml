@@ -170,8 +170,8 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
       magic-string:
-        specifier: ^0.30.17
-        version: 0.30.18
+        specifier: ^1.4.5
+        version: 1.4.5
       node-html-parser:
         specifier: ^7.0.1
         version: 7.0.1
